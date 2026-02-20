@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-baby-pink: #F8C8DC;
+  --color-rose-pink: #E75480;
+  --color-white: #FFFFFF;
+  --color-off-white: #FAFAFA;
+  --color-soft-beige: #F5F5DC;
+  --color-black: #1A1A1A;
+  --color-gray: #777777;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--font-body);
+  background-color: var(--color-off-white);
+  color: var(--color-black);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Base utility classes for layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-rose-pink);
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(231, 84, 128, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #d1416b;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-rose-pink);
+  border: 1px solid var(--color-rose-pink);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-baby-pink);
+  color: var(--color-rose-pink);
+}

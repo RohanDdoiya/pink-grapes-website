@@ -1,0 +1,128 @@
+.about-page {
+    animation: fadeIn 0.8s ease-out;
+    margin-top: 5rem;
+}
+
+.about-header {
+    background-color: var(--color-rose-pink);
+    color: var(--color-white);
+    padding: 6rem 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(231, 84, 128, 0.9), rgba(231, 84, 128, 0.9)), url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about-header h1 {
+    font-size: 3.5rem;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: var(--color-rose-pink);
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    color: var(--color-gray);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.value-item {
+    background: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.value-icon {
+    color: var(--color-rose-pink);
+    margin-bottom: 1rem;
+}
+
+.value-item h4 {
+    margin-bottom: 0.5rem;
+}
+
+.value-item p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.about-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: -15px 15px 0 var(--color-baby-pink);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bg-soft-beige {
+    background-color: var(--color-soft-beige);
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.badge-number {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: var(--color-rose-pink);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.badge p {
+    color: var(--color-gray);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        order: -1;
+        margin-bottom: 2rem;
+        box-shadow: -10px 10px 0 var(--color-baby-pink);
+    }
+}
